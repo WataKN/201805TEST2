@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>クローラ</title>
-    <link rel='rel="canonical"' />
+    <link rel='canonical' href='https://no1s.biz/' />
 </head>
 
 <?php
@@ -33,11 +33,11 @@ foreach($titleArr as $val) {
 
 
 foreach($ulArr as $val) {
-// var_dump($ulArr);
+
 	$title = pq($val)->find('a')->text();
 	$url = pq($val)->find('a')->attr('href');
 
-	$result .= $url .'　'. $title .'<br/>'. PHP_EOL;
+	$result .= $url .'　'. $title . PHP_EOL;
 
 }
 
